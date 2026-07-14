@@ -1,0 +1,73 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: 30px;
+    padding:20px 80px;
+}
+
+.logo{
+    margin:0;
+    font-size:32px;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links h4{
+    margin:0;
+    cursor:pointer;
+}
+
+.nav-links h4:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    padding:40px 80px;
+}
+
+.hero-left h1{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.hero-left p{
+    font-size:28px;
+    line-height:45px;
+}
+
+.getintouch-button{
+    color: white;
+    background-color: rgb(7, 249, 249);
+    font-weight: bold;
+    border-radius: 8px;
+    height: 44px;
+    width: 120px;
+}
+
+.getintouch-button:hover{
+    background-color: #77c2e1;
+}
+.summary{
+    text-align: center;
+    padding: 80px;
+}
+.summary h2{
+    color: #b8dcff;
+    font-size: 52px;
+    margin-bottom: 15px;
+}
