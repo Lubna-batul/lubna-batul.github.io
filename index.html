@@ -1,72 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> my first website </title>
+<link rel="stylesheet" href="styles.css" type="text/css">
 </head>
-
 <body>
-  <nav class="navbar">
-    <h1 class="logo">LUBNA BATUL Z</h1>
-      <div class="nav-links">
-            <h4>About</h4>
-            <h4>Skills</h4>
-            <h4>Projects</h4>
-            <h4>Education</h4>
-        </div>
-        </nav>
-<section class="hero">
-  <div class="hero-left">
-<h1> LUBNA BATUL Z</h1>
+  <div>
+<nav class="navigation">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  </div>
+<header>
+<h1>Hi, I'm <span class="lubna">Lubna Batul</span></h1>
 <p> Python Developer <br>
-  Backend Enthusiast | UI/UX Explorer</p>
-<button class="getintouch-button">
-      Get In Touch
-  </button>
-  </div>
+  Backend Enthusiast | UI/UX Explorer</b> </p>
+  <a href="#contact">Contact Me</a>
+</header>
+
+<main>
+<section id="about">
+  <div class="about-content">
+    <div class="about-heading">
+<p class="section-label"> ABOUT ME</p>
+<h2>About Me</h2>
+</div>
+<p class="about-description"> Hi, I’m Lubna, a creative and passionate individual who loves learning, exploring new ideas, and turning them into meaningful work. I’m always eager to grow my skills and take on new challenges. </p>
+<a href="Lubna_Batul_Z_Resume.pdf" download class="cv-button">Download My CV</a>
+</div>
+
+<div class="photo-card">
+  <p>Photo</p>
+</div>
+
+
 </section>
 
-<section class="summary">
-<h2>PROFESSIONAL SUMMARY</h2>
-<p>Passionate Python Developer with strong knowledge of Python, data structure, 
-  and object-oriented programming. Experienced in building structured applications and integrating REST APIs. 
-  Passionate about backend Development and creating scalable, user-friendly solutions with additional exposure to 
-  UI/UX design tools.
-</p>
-</section>
 
-<section id="Skills" class="Skills">
-  <ul>
-    <li>Python</li>
-    <li>REST APIs</li>
-    <li>Object-oriented programming</li>
-    <li>UI/UX design</li>
-    <li>HTML &amp; CSS</li>
-    <li>Git &amp; GitHub</li>
-  </ul>
-</section>
 
-<section class="skills">
-  <h2>TECHNICAL SKILLS</h2>
-  <div class="underline"></div>
+<section id="skills">
+  <h2 class="section-label">Skills</h2>
+  <h2>Technologies I Work with</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <ul>
+        <li>Python</li>
+        <li>C programming</li>
+        <li>OOP</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>                                                                        
+<div class="skill-card">
+ <h3>Backend</h3>
+ <ul>
+  <li>REST APIs</li>
+  <li>JSON</li>
+  <li>Python Backend</li>
+  <li>CRUD</li>
+ </ul> 
+</div>
   <div class="skill-card">
-    <div class="icon">&#128013;</div>
-    <h3>Python</h3>
-    <p>Core, OOP, Data Structure</p>
+    <h3>Tools</h3>
+    <ul>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>VS code</li>
+      <li>Figma</li>
+    </ul>
   </div>
-<div class="skill-card">
-    <div class="icon">&#127760;</div>
-    <h3>Web &amp; APIs</h3>
-    <p>REST APIs, HTML, CSS</p>
-  
-</div>
-<div class="skill-card">
-  <div class="icon">&#128736;&#65039;</div>
-  <h3>Git</h3>
-  <p>Git &amp; GitHub</p>
+  </div>
+</section>
+
+<section id="projects" class="section projects-section">
+  <h2 class="section-label">PROJECTS</h2>
+  <h2>Things I've Built</h2>
+
+<div class="project-container">
+
+  <div class="project-card">
+    <p class="project-number">01</p>
+<h3>AI Insurance Climb </h3> 
+<p>An automation claim verification system using Python and multimodel AI for evidence analysis and risk detection</p>
+<p>
+  <strong>Tech:</strong>
+  Python | Gemini API | Multimodel AI
+</p>
+<a href="https://github.com/Lubna-batul/hackerrank-orchestrate-june26" target="_blank" class="projrct-link">View on GitHub  →</a>
 </div>
 
+<div class="project-card">
+  <p class="project-number">02</p>
+<h3>Chat_Guard </h3>
+<p>A Python-based content moderation system that evaluates content and classifies it as Accept, Warn, Flag or Block.</p> 
+<p>
+  <strong>Tech:</strong>
+  Python | REST APIs | NLP
+</p>
+<a href="https://github.com/Lubna-batul/chat_guard" target="_blank" class="project-link">View on GitHub  →</a>
+</div>
+
+<div class="project-card">
+  <p class="project-number">03</p>
+<h3>Students_management_record</h3>
+<p>A Python application for managing student records using CURD operations, validation and structured data.</p>
+<p>
+  <strong>Tech:</strong>
+  Python | SQL | CURD
+</p>
+<a href="https://github.com/Lubna-batul/Student-management" target="_blank" class="project-link">View on GitHub  →</a>
+</div>
+
+</div>
 </section>
+<section id="education">
+  <h2 class="section-label">Education</h2>
+  <div class="education-card">
+    <h3>Bachelor of Computer Applications (BCA)</h3>
+    <p>University of Madras</p>
+    <p>2023 - 2026 </p>
+    <p>CGPA: 8.00/10</p>
+  </div>
+</section>
+  <section id="contact" class="contact">
+    <div class="contact-section">
+      <p class="section-label">CONTACT</p>
+     <h2>Let's Connect!</h2>
+     <P>I'm open to internship opportunities, junior developer roles and interesting projects.</P>
+     
+    <div class="contact-links">
+     <a href="mail@lubnabatul.com">Email</a>
+     <a href="www.linkedin.com/in/lubnabatul">linkedin</a>
+     </div>
+     </div>
+  </section>
+</section>
+</main>
+
+
+<footer>
+  <h3>Lubna</h3>
+   <p>
+        © 2026 Lubna Batul
+    </p>
+
+</footer>
 </body>
 </html>
-
