@@ -62,15 +62,20 @@ header{
 header h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80px;
-    font-weight: 800;
+    font-weight: 600;
     color:#ffffff;
     margin-bottom: 20px;
     letter-spacing:-2px;
     line-height:1.2;
+
 }
-.lubna
+.lubna{
+    color: greenyellow;
+
+}
 .accent {
     color: greenyellow;
+    
 }
 
 
@@ -78,7 +83,7 @@ header p{
     color: #c2c9c5;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     line-height: 1.6;
 margin-bottom: 34px;
 }
@@ -98,7 +103,7 @@ header a,
 
     padding: 13px 30px;
     border-radius: 30px;
-
+   
     font-weight: 700;
     text-decoration: none;
     box-shadow: 0 0 20px rgba(57, 255, 20, 0.25);
@@ -266,6 +271,12 @@ header a:hover,
 .skill-card li::marker{
     color: #39ff14;
 }
+.project-container{
+    display: grid;
+    gap: 24px;
+    text-align: left;
+    margin-top: 28px;
+}
 .project-card{
     display: flex;
     flex-direction: column;
@@ -279,7 +290,7 @@ header a:hover,
 .project-number{
     color: greenyellow;
     line-height: 1.24;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 16px;
 }
@@ -289,11 +300,8 @@ header a:hover,
     margin-bottom: 16px;
 }
 .project-card p{
-    font-size: 16px;
     padding-top: 12px;
-overflow-wrap: anywhere;
-    line-height: 0.4;
-    text-decoration: none;
+    font-size: 16px;
     margin-top:10px;
 }
 .project-card a{
@@ -305,6 +313,84 @@ overflow-wrap: anywhere;
 }
 .project-card a:hover{
     color:#ffffff;
+}
+.education{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+color: #f5f5f5
+;}
+.education-intro{
+    flex: 1;
+}
+.education-intro h2{
+    font-family: "cormorant Garamond",serif;
+    font-size: 60px;
+    margin: 16px;
+}
+.education-description{
+    max-width: 350px;
+    color: #c4c9c6;
+    text-align: left;
+    line-height: 1.6;
+}
+.learning-note{
+    margin-top: 60px;
+    color: greenyellow;
+    font-family: "cormorant Garamond",serif;
+    font-size: 28px;
+    font-style: italic;
+}
+.education-timeline{
+    flex: 1.5;
+    border-left: 1px solid #315b35;
+    padding-left: 34px;
+}
+.education-card{
+    margin: 30px;
+    padding: 34px;
+    background: linear-gradient(145deg,#111715,#070909);
+    border-radius: 22px;
+    border: 1px solid #19382b;
+    transition: 0.3s ease;
+}
+
+.education-card h3{
+    margin-bottom: 12px;
+    font-family: "cormorant Garamond",serif;
+    font-size: 26px;
+}
+.institution{
+    color: #c4c9c6;
+    line-height: 1.7;
+}
+.education-badge{
+    display: inline-block;
+    margin-top: 6px;
+    padding: 14px;
+    border-radius: 20px;
+    color: #baff00;
+    font-size: 14px;
+    font-weight: 400;
+}
+.education-card:hover{
+    border-color: #baff00;
+}
+.contact-section{
+margin: 0;
+}
+.contact-section h2{
+    margin-bottom: 40px;
+}
+.contact-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.contact-links a{
+    margin: 30px;
 }
 section {
     background: linear-gradient(
@@ -333,7 +419,7 @@ section p{
     line-height: 1.8;
     margin: 0;
 }
-section >h2:not(section-label){
+section h2{
     color: #ffffff;
     font-weight: 800;
     font-size: 52px;
@@ -363,6 +449,7 @@ section >h2:not(section-label){
     box-shadow: 0 0 8px rgba(56, 256, 20 , 0.3);
 }
 
+
 header,
 section,
 .skill-card,
@@ -380,10 +467,16 @@ section,
 footer{
     padding: 24px;
     text-align: center;
-    background-color: #f5f0e9;
+    background-color: #080d09;
     border-radius: 12px;
     margin-top: 0%;
-    color: brown;
-    font-size: medium;
+    color: #aeb8b0;
+    font-size: 14px;
+        border: 1px solid greenyellow;
 
+
+}
+footer h3{
+    font-size: 30px;
+    margin-bottom: 8px; 
 }
