@@ -326,8 +326,8 @@ header a:hover,
     border: 1px solid greenyellow;
     border-radius: 25px;
     background: #080c09;
+    
 }
-
 /* Left Side */
 .education-intro {
     flex: 1;
@@ -355,7 +355,6 @@ header a:hover,
     margin: 0;
     text-align: left;
 }
-
 .learning-note {
     color: greenyellow;
     font-size: 28px;
@@ -433,6 +432,47 @@ margin: 0;
 .contact-links a{
     margin: 30px;
 }
+.contact-section{
+    max-width: 670px;
+    margin: auto;
+    text-align: center;
+}
+.contact-section label{
+    margin: 20px;
+    text-align: left;
+    display: block;
+}
+.contact-section input,
+.contact-section textarea{
+    color: white;
+    background: #0b100c;
+    width: 100%;
+    padding: 22px;
+    border: 1px solid greenyellow;
+    border-radius: 8px;  
+}
+.contact-section button{
+    margin:20px;
+    color: #050805;
+    border-radius: 24px;
+    font-size: 16px;
+    width: 120px;
+    background: greenyellow;
+font-weight: bold;
+cursor: pointer;
+padding: 16px;
+}
+.contact-links{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+
+    margin-top: 24px;
+}
+.contact-section p{
+    margin-left: 2px;
+    
+} 
 section {
     background: linear-gradient(
         145deg,
@@ -490,7 +530,6 @@ section h2{
     box-shadow: 0 0 8px rgba(56, 256, 20 , 0.3);
 }
 
-
 header,
 section,
 .skill-card,
@@ -505,6 +544,7 @@ section,
 #contact {
     text-align: center;
 }
+
 footer{
     padding: 24px;
     text-align: center;
