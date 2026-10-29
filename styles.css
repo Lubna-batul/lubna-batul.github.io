@@ -568,20 +568,13 @@ footer h3{
 
 
 /* Responsive design */
-
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
-
 @media (max-width: 768px) {
     .navigation {
-        flex-wrap: wrap;
-        gap: 15px;
+        position: static;
         margin: 10px;
+        padding: 15px;
+        gap: 12px;
+        flex-wrap: wrap;
     }
 
     header, section, #about {
@@ -591,11 +584,19 @@ img {
     }
 
     header h1 {
-        font-size: 38px;
+        font-size: clamp(28px, 7vw, 42px);
+    }
+
+    section h2,
+    #about .about-heading h2,
+    .education-intro h2 {
+        font-size: 30px;
+        margin: 15px 0;
     }
 
     #about {
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 25px;
     }
 
     #about .photo-card {
@@ -608,11 +609,16 @@ img {
     }
 
     #education.education {
-        flex-wrap: wrap;
+        flex-direction: column;
         padding: 20px;
     }
 
     .education-timeline {
-        padding-left: 15px;
+        padding-left: 12px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        width: 100%;
     }
 }
