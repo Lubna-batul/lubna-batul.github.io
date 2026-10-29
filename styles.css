@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
-
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 body{
     font-family:"DM Sans",sans-serif;
@@ -560,4 +564,55 @@ footer{
 footer h3{
     font-size: 30px;
     margin-bottom: 8px; 
+}
+
+
+/* Responsive design */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 10px;
+    }
+
+    header, section, #about {
+        width: auto;
+        margin: 15px 10px;
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    #about {
+        flex-wrap: wrap;
+    }
+
+    #about .photo-card {
+        margin: 0 auto;
+    }
+
+    .skills-container,
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    #education.education {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .education-timeline {
+        padding-left: 15px;
+    }
 }
