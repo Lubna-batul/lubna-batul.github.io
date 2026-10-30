@@ -565,60 +565,100 @@ footer h3{
     font-size: 30px;
     margin-bottom: 8px; 
 }
+/* MOBILE FIXES FOR SKILLS, PROJECTS & EDUCATION */
 
-
-/* Responsive design */
 @media (max-width: 768px) {
-    .navigation {
-        position: static;
-        margin: 10px;
-        padding: 15px;
-        gap: 12px;
-        flex-wrap: wrap;
-    }
 
-    header, section, #about {
-        width: auto;
-        margin: 15px 10px;
-        padding: 25px 15px;
-    }
-
-    header h1 {
-        font-size: clamp(28px, 7vw, 42px);
-    }
-
-    section h2,
-    #about .about-heading h2,
-    .education-intro h2 {
-        font-size: 30px;
-        margin: 15px 0;
-    }
-
-    #about {
+    .skills-container {
+        display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
     }
 
-    #about .photo-card {
-        margin: 0 auto;
+    .skill-card {
+        width: 100%;
+        flex: none;
+        min-width: 0;
     }
-
-    .skills-container,
     .project-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        min-width: 0;
+    }
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: none;
+        margin: 0;
+        padding: 24px 18px;
+        box-sizing: border-box;
     }
 
     #education.education {
         flex-direction: column;
-        padding: 20px;
+        gap: 28px;
+        padding: 28px 20px;
+        display: flex;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    #education .education-intro .section-label{
+        display: flex;
+        justify-content: flex-start;
+        color: greenyellow;
+        font-size: 24px;
+                margin: 25px 40px;
+
+    font-weight: 600;
+    font-size: 17px;
+letter-spacing: 2px;
+margin-bottom: 24px;
+    }
+
+    .education-intro {
+        width: 100%;
+        padding: 0;
+        margin: 24px 0;
+    }
+
+    #education .education-intro h2 {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 54px;
+    }
+    #education .education-description{
+        line-height: 1.7;
+        max-width: 700px;
+        text-align: left;
+        margin: 25px 40px;
+        margin-bottom: 24px;
+    }
+
+    .learning-note {
+        margin-top: 25px;
+line-height: 1.4;
+margin-bottom: 32px 0;
     }
 
     .education-timeline {
-        padding-left: 12px;
+        width: 100%;
+        padding-left: 24px;
     }
 
-    .contact-section input,
-    .contact-section textarea {
-        width: 100%;
+    .education-card {
+        padding: 22px 20px;
+        text-align: center;
+        overflow-wrap: anywhere;
     }
+
+    .education-card h3 {
+        font-size: 23px;
+        margin: 24px 0 ;
+        line-height: 1.4;
+    }
+
 }
